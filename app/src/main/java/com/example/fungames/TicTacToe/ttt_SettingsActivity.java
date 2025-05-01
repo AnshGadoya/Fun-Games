@@ -129,7 +129,7 @@ public class ttt_SettingsActivity extends AppCompatActivity {
                     intent.putExtra(Intent.EXTRA_TEXT, "your_text");
                     startActivity(intent);
                 } catch (ActivityNotFoundException e) {
-                    //TODO smth
+
                 }
 
                 */
@@ -168,7 +168,7 @@ public class ttt_SettingsActivity extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "Send feedback"));
         }
         } catch (ActivityNotFoundException e) {
-            //TODO smth
+
         }
     }
 
