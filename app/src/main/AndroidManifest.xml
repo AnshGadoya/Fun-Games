@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".splashScreen"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".TicTacToe.ttt_SettingsActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TicTacToe.ttt_AiGameActivity" />
+        <activity
+            android:name=".TicTacToe.ttt_AiChooseSymbolActivity" />
+        <activity
+            android:name=".TicTacToe.ttt_AIGetPlayerNameActivity" />
+        <activity
+            android:name=".TicTacToe.ttt_OfflineGameActivity" />
+        <activity
+            android:name=".TicTacToe.ttt_ChooseSymbolActivity" />
+        <activity
+            android:name=".TicTacToe.ttt_OfflineGetPlayersNamesActivity"/>
+        <activity
+            android:name=".TicTacToe.ttt_OfflineGameMenuActivity">
+        </activity>
+
+            <!-- Memory Game-->
+        <activity android:name=".cardMemory.mg_Menu"
+            android:screenOrientation="fullSensor">
+        </activity>
+        <activity android:name=".cardMemory.mg_GameScreen"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".cardMemory.mg_ResultWin"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".cardMemory.mg_ResultLose"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".colorHunt.ch_game_screen"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".colorHunt.ch_menu_screen"
+            android:screenOrientation="fullSensor"/>
+
+        <!-- Sound Memory-->
+        <activity android:name=".soundMemory.smg_gameScreen"
+            android:screenOrientation="fullSensor"/>
+
+
+<!--        Word Search-->
+        <activity
+            android:name=".wordSearch.ui.GameActivity"
+            android:label="@string/title_activity_launch_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wordSearch.ui.DashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".wordSearch.ui.InstructionsActivity"
+            android:label="@string/title_activity_instructions" >
+        </activity>
+<!--        Flappy bird-->
+        <activity
+            android:name=".flappybird.fb_MainActivity">
+        </activity>
+<!--        Setting-->
+        <activity android:name=".SettingsActivity" />
+    </application>
+
+</manifest>

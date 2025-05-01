@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    ///Setting
+    <color name="setting_text_background">#FFFFFF</color>
+
+    <color name="card_background">#FFFFFF</color>
+    <color name="appBar_background">#666464</color>
+    <color name="divider">#FFFFFF</color>
+    <color name="main_background">#272525</color>
+</resources>

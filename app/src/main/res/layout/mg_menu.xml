@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dark"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8sp"
+        android:layout_marginTop="16dp"
+        android:text="Select Game Mode -"
+        android:fontFamily="@font/maian"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/illustration" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNumbers"
+                    android:backgroundTint="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_menu_1"
+                    android:text="Numbers"
+                    android:fontFamily="@font/maian"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/icon_numbers"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnFlowers"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_menu_2"
+                    android:text="Flowers"
+                    android:fontFamily="@font/maian"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/icon_flowers"
+                    android:paddingTop="20dp" />
+            </LinearLayout>
+
+            // Third - Emote //
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEmote"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_menu_3"
+                    android:text="Emoji"
+                    android:fontFamily="@font/maian"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/icon_emote"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp">
+
+            // Fourth - Sports //
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSports"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_menu_4"
+                    android:text="Sports"
+                    android:fontFamily="@font/maian"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/icon_sports"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            // Fifth - Shapes //
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnShape"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_menu_5"
+                    android:text="Shapes"
+                    android:fontFamily="@font/maian"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/icon_shape"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            // Sixth - Deck //
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDeck"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_menu_6"
+                    android:text="Deck"
+                    android:fontFamily="@font/maian"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/icon_deck"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

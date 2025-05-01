@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#ECEFF1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎮 Select Difficulty Level"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginBottom="40dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/easyButton"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:text="Easy (10 sec)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_easy"
+        android:elevation="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mediumButton"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:text="Medium (7 sec)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_medium"
+        android:elevation="8dp"
+        android:layout_marginTop="24dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hardButton"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:text="Hard (4 sec)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_hard"
+        android:elevation="8dp"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

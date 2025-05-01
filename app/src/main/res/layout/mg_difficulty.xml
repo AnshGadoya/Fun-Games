@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/dif">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Difficulty"
+        android:textSize="35sp"
+        android:layout_marginBottom="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/maian"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/maian"
+        android:background="@drawable/btndesign" />
+
+    <Button
+        android:id="@+id/btnMedium"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/maian"
+        android:background="@drawable/btndesign"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Hard"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/maian"
+        android:background="@drawable/btndesign"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
